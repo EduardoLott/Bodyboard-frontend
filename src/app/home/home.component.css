@@ -1,0 +1,26 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% da altura da janela de visualização, ajuste conforme necessário */
+}
+
+.home {
+    flex: 1; /* Ocupa o espaço restante verticalmente */
+}
+
+.live-main{
+    border: 5px solid green; /* Borda verde */
+    max-height: 80%;
+    height: 100%;
+    max-width: 80%; /* Largura máxima da div */
+    width: 100%; /* Garante que a div ocupe a largura disponível */
+    overflow: hidden; /* Esconde qualquer parte do vídeo que ultrapasse as bordas */
+}
+
+
+.title-home{ 
+    font-size: 30px;
+    color: #01371d;
+}
