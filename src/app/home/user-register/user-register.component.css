@@ -1,0 +1,50 @@
+.register-form {
+    max-width: 60%; /* Largura máxima */
+    margin: auto; /* Centralizar o formulário na página */
+    padding: 20px; /* Adicionar espaço interno ao redor do formulário */
+  }
+
+.form-control{
+    border: 1px solid green; 
+}
+
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+  /* Adicione estilos para a imagem do perfil */
+.profile-picture {
+    border-radius: 50%;
+    width: 160px; /* Ajuste a largura conforme necessário */
+    height: 160px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra completamente a área do círculo */
+  }
+
+  #profilePictureContainer {
+    border: 5px solid green; 
+    position: relative;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  #profilePicture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #profilePictureInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }  

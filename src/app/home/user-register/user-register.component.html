@@ -1,0 +1,69 @@
+<div class="register-form">
+    <!-- user-register.component.html -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="mt-3">
+    <div class="mb-3" id="profilePictureContainer">
+        <label for="profilePictureInput" id="profilePicture">
+          <img [src]="profilePictureUrl" alt="Profile Picture" class="profile-picture">
+        </label>
+        <input
+          type="file"
+          id="profilePictureInput"
+          formControlName="profilePicture"
+          accept="image/*"
+          (change)="onProfilePictureChange($event)"
+        >
+      </div>
+      
+
+    <div class="row">
+      <!-- Primeira coluna -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="fullName" formControlName="fullName">
+        </div>
+  
+        <div class="mb-3">
+          <label for="birthDate" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="birthDate" formControlName="birthDate">
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+        </div>
+  
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" formControlName="cpf">
+        </div>
+      </div>
+  
+      <!-- Segunda coluna -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password" formControlName="password">
+        </div>
+  
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirmar Senha</label>
+          <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+        </div>
+  
+        <div class="mb-3">
+          <label for="state" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="state" formControlName="state">
+        </div>
+  
+        <div class="mb-3">
+          <label for="athleteName" class="form-label">Nome de Atleta</label>
+          <input type="text" class="form-control" id="athleteName" formControlName="athleteName">
+        </div>
+      </div>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+  
+</div>
