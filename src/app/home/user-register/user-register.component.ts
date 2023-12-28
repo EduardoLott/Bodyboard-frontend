@@ -33,7 +33,7 @@ export class UserRegisterComponent implements OnInit {
   onProfilePictureChange(event: any): void {
     const file = (event.target as HTMLInputElement).files?.[0];
     if (file) {
-      // Converte a imagem para uma URL segura
+      // Converte a imagem para uma URL segura  
       this.profilePictureUrl = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(file));
 
       // Define o valor do campo profilePicture no formulário
