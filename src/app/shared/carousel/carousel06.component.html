@@ -1,0 +1,27 @@
+<div class="">
+  <c-carousel class="carousel" [dark]="true" [wrap]="false">
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides; index as i;">
+          <img
+            src="https://img.freepik.com/fotos-gratis/uma-imagem-de-um-planeta-com-um-buraco-negro-no-centro-e-um-buraco-negro-no-centro_1340-23795.jpg"
+            alt="{{slide.title}}"
+            class="d-block w-100"
+            loading="lazy"
+          />
+          <c-carousel-caption class="d-none d-md-block">
+            <h3>{{slide.title}}</h3>
+            <p>{{slide.subtitle}}</p>
+          </c-carousel-caption>
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
+    <div class="header">
+      <h1>Sobre Nós</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus neque nostrum, quaerat accusamus earum eum non vitae molestias. Deserunt ullam omnis atque veniam commodi, iure eaque vitae deleniti molestiae consectetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatem nisi provident doloribus. Praesentium impedit tempore repudiandae et ex? Quasi assumenda saepe nemo officia reprehenderit iusto esse delectus minima adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias saepe ab asperiores expedita. Temporibus ducimus, saepe fugiat libero fugit impedit commodi corrupti deleniti laudantium delectus hic doloribus eius ad.</p>
+    </div>
+
+</div>
+  

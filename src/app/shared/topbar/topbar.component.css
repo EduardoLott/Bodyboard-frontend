@@ -1,6 +1,17 @@
 .navbar-brand,
 .nav-link,
 .btn {
-  font-size: 30px; /* ajuste conforme necessário */
+  font-size: 22px; /* ajuste conforme necessário */
 }
 
+.nav-item:hover {
+  transition: 1s all;
+  transform:scale(1.05);
+  cursor: pointer;
+  color: black;
+}
+
+.container {
+  display: flex;
+  gap: 1.5rem;
+}
